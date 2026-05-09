@@ -11,31 +11,22 @@ body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--bg-color);
+    background-image: linear-gradient(rgba(244, 243, 236, 0.92), rgba(244, 243, 236, 0.92)), url('../images/pathajaliwithguru.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: var(--text-color);
     line-height: 1.6;
 }
 
 .bg-placeholder {
-    /* Placeholder for background image */
-    background-color: var(--primary-color);
-    /* Uncomment and replace with actual image path when ready */
-    /* background-image: url('../images/bg-placeholder.jpg'); */
+    /* Top header picture */
+    background-color: var(--secondary-color);
+    background-image: url('../images/guruLogo.png');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
-    height: 300px;
+    height: 350px;
     width: 100%;
-    opacity: 0.9;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 1.5rem;
-    font-style: italic;
-}
-
-.bg-placeholder::after {
-    content: "(Background Image Placeholder)";
 }
 
 .header-container {
@@ -102,7 +93,7 @@ nav a:hover {
     max-width: 900px;
     margin: 2rem auto;
     padding: 3rem;
-    background: white;
+    background: rgba(255, 255, 255, 0.95);
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.03);
 }
