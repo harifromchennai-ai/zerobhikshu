@@ -7,25 +7,31 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
-    <div class="bg-placeholder">
-        <!-- Background image will be applied here via CSS -->
-    </div>
     <header>
         <div class="header-container">
             <div class="header-left">
-                <img src="{{ '/assets/images/pathajaliwithguru.png' | relative_url }}" alt="Left Background" class="side-bg-img">
+                <img src="{{ '/assets/images/logo.jpg' | relative_url }}" alt="Logo Left" class="side-logo">
             </div>
+            
             <div class="header-center">
-                <img src="{{ '/assets/images/logo.jpg' | relative_url }}" alt="Logo" class="center-logo">
-                <h1>{{ site.title }}</h1>
+                <div class="logo-wrapper">
+                    <svg viewBox="0 0 400 200" class="arched-text-svg">
+                        <path id="curve" d="M 50 180 A 150 150 0 0 1 350 180" fill="transparent" />
+                        <text>
+                            <textPath href="#curve" startOffset="50%" text-anchor="middle">
+                                Shree pathanjala maharishi yoga kendhram trust
+                            </textPath>
+                        </text>
+                    </svg>
+                    <img src="{{ '/assets/images/guruLogo.png' | relative_url }}" alt="Guru Logo" class="center-guru-logo">
+                </div>
                 <p class="address">
-                    123 Serenity Lane, Wellness Park<br>
-                    Peaceville, Y0G 4L1<br>
-                    Contact: info@zerobhikshu.org
+                    Alagar koil, Madurai, Tamilnadu
                 </p>
             </div>
+            
             <div class="header-right">
-                <img src="{{ '/assets/images/pathajaliwithguru.png' | relative_url }}" alt="Right Background" class="side-bg-img">
+                <img src="{{ '/assets/images/logo.jpg' | relative_url }}" alt="Logo Right" class="side-logo">
             </div>
         </div>
         <nav>
@@ -35,6 +41,10 @@
         </nav>
     </header>
 
+    <div class="hero-image-container">
+        <img src="{{ '/assets/images/pathajaliwithguru.png' | relative_url }}" alt="Pathanjali with Guru" class="hero-image">
+    </div>
+
     <main class="content">
         {{ content }}
     </main>
@@ -42,14 +52,10 @@
     <footer>
         <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. A Non-Profit Organization dedicated to Yoga.</p>
         <div class="visit-counter">
-            <!-- Simple placeholder for visits. A dynamic counter typically requires an external service -->
             Visits this year: <span id="visit-count">Loading...</span>
         </div>
         <script>
-            // Placeholder visit counter logic
-            // To get accurate numbers, you could integrate a free service like GoatCounter or Google Analytics.
             document.addEventListener("DOMContentLoaded", function() {
-                // A static pseudo-random number for demonstration
                 document.getElementById('visit-count').innerText = "1,432";
             });
         </script>

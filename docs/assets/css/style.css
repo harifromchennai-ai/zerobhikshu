@@ -1,40 +1,25 @@
-/* Soft, earthy, non-contrasting colors for a Yoga theme */
+/* Light Saffron theme colors */
 :root {
-    --primary-color: #7b8e6b; /* Sage green */
-    --secondary-color: #e8e6d9; /* Sand / Beige */
-    --text-color: #555555; /* Soft dark gray */
-    --bg-color: #f4f3ec; /* Off-white */
-    --link-color: #627553;
+    --primary-color: #d35400; /* Deep orange/saffron for contrast */
+    --secondary-color: #ffead0; /* Very light saffron/orange for backgrounds */
+    --text-color: #333333;
+    --bg-color: #fff2e3; /* Light saffron background */
+    --link-color: #a04000;
 }
 
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--bg-color);
-    background-image: linear-gradient(rgba(244, 243, 236, 0.92), rgba(244, 243, 236, 0.92)), url('../images/pathajaliwithguru.png');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
     color: var(--text-color);
     line-height: 1.6;
-}
-
-.bg-placeholder {
-    /* Top header picture */
-    background-color: var(--secondary-color);
-    background-image: url('../images/guruLogo.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 200px;
-    width: 100%;
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
+    padding: 1rem 2rem;
     background-color: var(--secondary-color);
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
@@ -52,45 +37,67 @@ body {
     justify-content: flex-end;
 }
 
-.side-bg-img {
-    max-width: 100%;
-    max-height: 150px;
-    object-fit: contain;
-    border-radius: 8px;
+.side-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .header-center {
     text-align: center;
     flex: 2;
-    padding: 0 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
-.center-logo {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 3px solid white;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    margin-bottom: 1rem;
+.logo-wrapper {
+    position: relative;
+    width: 300px;
+    height: 200px; /* Space for arched text and logo */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 0.5rem;
 }
 
-.header-center h1 {
-    margin: 0 0 0.5rem 0;
-    color: var(--primary-color);
-    font-size: 2.5rem;
-    font-weight: 300;
-    letter-spacing: 2px;
+.arched-text-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.arched-text-svg text {
+    font-size: 18px;
+    font-weight: 600;
+    fill: var(--primary-color);
+    font-family: 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+}
+
+.center-guru-logo {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    border-radius: 50%; /* Optional, depending on the logo's native shape */
+    background-color: white; /* Optional, adds contrast if logo has transparency */
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    z-index: 1; /* Ensure it stays above SVG paths if they overlap */
+    margin-bottom: 10px;
 }
 
 .address {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: var(--text-color);
     margin: 0;
-    line-height: 1.4;
+    font-weight: 500;
 }
 
 nav {
@@ -104,7 +111,7 @@ nav a {
     text-decoration: none;
     margin: 0 1.5rem;
     font-size: 1.1rem;
-    font-weight: 400;
+    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -113,9 +120,27 @@ nav a:hover {
     text-decoration: underline;
 }
 
+.hero-image-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    text-align: center;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+.hero-image {
+    max-width: 100%;
+    max-height: 70vh; /* Prevents it from taking up too much vertical space on large screens */
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
 .content {
     max-width: 900px;
-    margin: 2rem auto;
+    margin: 0 auto 3rem auto;
     padding: 3rem;
     background: rgba(255, 255, 255, 0.95);
     border-radius: 8px;
@@ -128,7 +153,7 @@ footer {
     background-color: var(--secondary-color);
     font-size: 0.95rem;
     color: var(--text-color);
-    margin-top: 3rem;
+    margin-top: auto;
 }
 
 .visit-counter {
@@ -153,12 +178,59 @@ a {
 }
 
 .photo-gallery-link:hover {
-    background-color: var(--bg-color);
-    border-color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 
 .photo-gallery-link h3 {
     margin: 0 0 0.5rem 0;
     color: var(--primary-color);
-    font-weight: 400;
+    font-weight: 500;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        padding: 1.5rem 1rem;
+    }
+
+    .header-left, .header-right {
+        margin: 1rem 0;
+        /* Keep logos visible but stack them or adjust size */
+        justify-content: center;
+    }
+
+    .side-logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .logo-wrapper {
+        width: 250px;
+        height: 180px;
+    }
+
+    .arched-text-svg text {
+        font-size: 14px;
+    }
+
+    .center-guru-logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+
+    nav a {
+        margin: 0.5rem 0;
+    }
+
+    .content {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
 }
