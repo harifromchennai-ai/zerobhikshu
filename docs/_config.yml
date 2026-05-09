@@ -1,1 +1,4 @@
-remote_theme: pages-themes/architect@v0.2.0
+title: Zerobhikshu
+description: Non-profit Yoga Organization
+url: "https://www.zerobhikshu.org"
+# Removed remote_theme to eliminate GitHub text/ribbons and use a custom layout.

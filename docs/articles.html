@@ -1,0 +1,18 @@
+---
+layout: default
+title: Articles
+---
+
+<h2>Articles & Publications</h2>
+<p>Here you can read our published articles. New articles added to the <code>_posts</code> directory will automatically appear here.</p>
+
+<ul style="list-style-type: none; padding: 0;">
+  {% for post in site.posts %}
+    <li style="margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--secondary-color);">
+      <h3 style="margin-bottom: 0.3rem;"><a href="{{ post.url | relative_url }}" style="text-decoration: none;">{{ post.title }}</a></h3>
+      <small style="color: var(--primary-color); display: block; margin-bottom: 0.5rem;">{{ post.date | date: "%B %-d, %Y" }}</small>
+      <p style="margin: 0;">{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
+      <a href="{{ post.url | relative_url }}" style="font-size: 0.9em; font-weight: bold; margin-top: 0.5rem; display: inline-block;">Read more →</a>
+    </li>
+  {% endfor %}
+</ul>

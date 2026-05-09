@@ -1,0 +1,149 @@
+/* Soft, earthy, non-contrasting colors for a Yoga theme */
+:root {
+    --primary-color: #7b8e6b; /* Sage green */
+    --secondary-color: #e8e6d9; /* Sand / Beige */
+    --text-color: #555555; /* Soft dark gray */
+    --bg-color: #f4f3ec; /* Off-white */
+    --link-color: #627553;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.bg-placeholder {
+    /* Placeholder for background image */
+    background-color: var(--primary-color);
+    /* Uncomment and replace with actual image path when ready */
+    /* background-image: url('../images/bg-placeholder.jpg'); */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 300px;
+    width: 100%;
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.bg-placeholder::after {
+    content: "(Background Image Placeholder)";
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--secondary-color);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.header-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%; /* Circular images look softer */
+    background-color: #d1cdb8; /* Placeholder color if image fails */
+    border: 3px solid white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.header-center {
+    text-align: center;
+    flex-grow: 1;
+    padding: 0 2rem;
+}
+
+.header-center h1 {
+    margin: 0 0 0.5rem 0;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.address {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin: 0;
+    line-height: 1.4;
+}
+
+nav {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 3rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+}
+
+footer {
+    text-align: center;
+    padding: 2.5rem;
+    background-color: var(--secondary-color);
+    font-size: 0.95rem;
+    color: var(--text-color);
+    margin-top: 3rem;
+}
+
+.visit-counter {
+    margin-top: 1rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+a {
+    color: var(--link-color);
+}
+
+.photo-gallery-link {
+    display: block;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 6px;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.photo-gallery-link:hover {
+    background-color: var(--bg-color);
+    border-color: var(--primary-color);
+}
+
+.photo-gallery-link h3 {
+    margin: 0 0 0.5rem 0;
+    color: var(--primary-color);
+    font-weight: 400;
+}

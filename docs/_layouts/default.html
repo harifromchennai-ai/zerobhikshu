@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+    <div class="bg-placeholder">
+        <!-- Background image will be applied here via CSS -->
+    </div>
+    <header>
+        <div class="header-container">
+            <div class="header-left">
+                <!-- Left Image Placeholder -->
+                <img src="{{ '/assets/images/left-image-placeholder.jpg' | relative_url }}" alt="Left Logo" class="header-img">
+            </div>
+            <div class="header-center">
+                <h1>{{ site.title }}</h1>
+                <p class="address">
+                    123 Serenity Lane, Wellness Park<br>
+                    Peaceville, Y0G 4L1<br>
+                    Contact: info@zerobhikshu.org
+                </p>
+            </div>
+            <div class="header-right">
+                <!-- Right Image Placeholder -->
+                <img src="{{ '/assets/images/right-image-placeholder.jpg' | relative_url }}" alt="Right Logo" class="header-img">
+            </div>
+        </div>
+        <nav>
+            <a href="{{ '/' | relative_url }}">Home</a>
+            <a href="{{ '/photos.html' | relative_url }}">Photos</a>
+            <a href="{{ '/articles.html' | relative_url }}">Articles</a>
+        </nav>
+    </header>
+
+    <main class="content">
+        {{ content }}
+    </main>
+
+    <footer>
+        <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. A Non-Profit Organization dedicated to Yoga.</p>
+        <div class="visit-counter">
+            <!-- Simple placeholder for visits. A dynamic counter typically requires an external service -->
+            Visits this year: <span id="visit-count">Loading...</span>
+        </div>
+        <script>
+            // Placeholder visit counter logic
+            // To get accurate numbers, you could integrate a free service like GoatCounter or Google Analytics.
+            document.addEventListener("DOMContentLoaded", function() {
+                // A static pseudo-random number for demonstration
+                document.getElementById('visit-count').innerText = "1,432";
+            });
+        </script>
+    </footer>
+</body>
+</html>
