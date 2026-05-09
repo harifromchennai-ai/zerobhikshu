@@ -23,9 +23,10 @@ body {
     /* Top header picture */
     background-color: var(--secondary-color);
     background-image: url('../images/guruLogo.png');
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
-    height: 350px;
+    height: 200px;
     width: 100%;
 }
 
@@ -38,20 +39,43 @@ body {
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
-.header-img {
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 50%; /* Circular images look softer */
-    background-color: #d1cdb8; /* Placeholder color if image fails */
-    border: 3px solid white;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+.header-left, .header-right {
+    flex: 1;
+    display: flex;
+}
+
+.header-left {
+    justify-content: flex-start;
+}
+
+.header-right {
+    justify-content: flex-end;
+}
+
+.side-bg-img {
+    max-width: 100%;
+    max-height: 150px;
+    object-fit: contain;
+    border-radius: 8px;
 }
 
 .header-center {
     text-align: center;
-    flex-grow: 1;
-    padding: 0 2rem;
+    flex: 2;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.center-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
 }
 
 .header-center h1 {
