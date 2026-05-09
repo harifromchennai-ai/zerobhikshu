@@ -1,4 +1,9 @@
 ---
+layout: default
+title: Zerobhikshu
+---
+
+---
 title: www.zerobhikshu.org
 date: 2026-05-09 16:12:32
 slug: wwwzerobhikshuorg
