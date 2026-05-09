@@ -7,12 +7,29 @@
     --link-color: #a04000;
 }
 
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
     line-height: 1.6;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 .header-container {
@@ -122,16 +139,17 @@ nav a:hover {
 
 .hero-image-container {
     width: 100%;
-    max-width: 1200px;
-    margin: 2rem auto;
+    max-width: 800px; /* Compacted for page size */
+    margin: 1.5rem auto; /* Slightly tighter vertical spacing */
     text-align: center;
     padding: 0 1rem;
     box-sizing: border-box;
 }
 
 .hero-image {
+    width: 100%;
     max-width: 100%;
-    max-height: 70vh; /* Prevents it from taking up too much vertical space on large screens */
+    max-height: 55vh; /* Prevents it from taking up too much vertical space on large screens */
     height: auto;
     object-fit: contain;
     border-radius: 12px;
