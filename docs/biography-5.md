@@ -3,7 +3,7 @@ layout: default
 title: ஜீவ சரிதம் - பக்கம் 5
 ---
 
-<div class="biography-content" style="line-height: 1.8; font-size: 1.1em; padding: 20px;">
+<div class="biography-content" style="line-height: 1.8; font-size: 1.1em; padding: 20px;" markdown="1">
 
 கும்பாபிஷேகம் செய்யப்பட்டது. அதுவே பின்பு நமது பிரதமர்
 மோடி அவர்கள் அன்றைய தினத்தை உலக யோகா தினம்

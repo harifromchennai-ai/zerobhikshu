@@ -3,7 +3,7 @@ layout: default
 title: Biography - Page 3
 ---
 
-<div class="biography-content" style="line-height: 1.8; font-size: 1.1em; padding: 20px;">
+<div class="biography-content" style="line-height: 1.8; font-size: 1.1em; padding: 20px;" markdown="1">
 
 "I expect from you," he said. This is the secret behind Sadguru Zero Bhikshu's holy name.
 

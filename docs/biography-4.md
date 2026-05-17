@@ -3,7 +3,9 @@ layout: default
 title: ஜீவ சரிதம் - பக்கம் 4
 ---
 
-<div class="biography-content" style="line-height: 1.8; font-size: 1.1em; padding: 20px;">
+<div class="biography-content" style="line-height: 1.8; font-size: 1.1em; padding: 20px;" markdown="1">
+
+**ஸ்ரீ பதஞ்சலி மகரிஷி யோக கேந்திரம்:**
 
 நம் சற்குரு “0” பிக்ஷு ஓய்வு பெற்ற பின்பு, தான் பயின்ற யோக
 பயிற்சியை உலக மக்கள் அனைவருக்கும் சென்றடைய

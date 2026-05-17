@@ -3,7 +3,7 @@ layout: default
 title: Biography - Page 4
 ---
 
-<div class="biography-content" style="line-height: 1.8; font-size: 1.1em; padding: 20px;">
+<div class="biography-content" style="line-height: 1.8; font-size: 1.1em; padding: 20px;" markdown="1">
 
 After our Sadguru "0" Bhikshu retired, wishing for the yoga he learned to reach all people in the world, he started an organization named "Sri Pathanjali Maharishi Yoga Kendram" in 1986 at his home in Kochadai, Madurai, in the name of Sri Pathanjali Maharishi who bestowed this yoga. Later, he taught Raja Yoga to the devotees who visited there and paved the way for them to live a yogic life. Many devotees benefited through this Yoga Kendram.
 

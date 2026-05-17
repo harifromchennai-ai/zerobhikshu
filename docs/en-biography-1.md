@@ -3,7 +3,7 @@ layout: default
 title: Biography - Page 1
 ---
 
-<div class="biography-content" style="line-height: 1.8; font-size: 1.1em; padding: 20px;">
+<div class="biography-content" style="line-height: 1.8; font-size: 1.1em; padding: 20px;" markdown="1">
 
 # **Zero Bhikshu Biography**
 Our Guru's birth name is N. Devarajan. He was born in Vizianagaram (Andhra Pradesh), but he grew up and studied in Thanjavur, Srinivasa Puram. He was born on December 15, 1917. 

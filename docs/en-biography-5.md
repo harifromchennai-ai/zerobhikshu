@@ -3,7 +3,7 @@ layout: default
 title: Biography - Page 5
 ---
 
-<div class="biography-content" style="line-height: 1.8; font-size: 1.1em; padding: 20px;">
+<div class="biography-content" style="line-height: 1.8; font-size: 1.1em; padding: 20px;" markdown="1">
 
 Kumbhabhishekam (consecration) was performed. It is a miraculous event that later our Prime Minister Modi announced that very day as the International Day of Yoga.
 

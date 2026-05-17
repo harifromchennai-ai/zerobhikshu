@@ -3,7 +3,7 @@ layout: default
 title: Biography - Page 2
 ---
 
-<div class="biography-content" style="line-height: 1.8; font-size: 1.1em; padding: 20px;">
+<div class="biography-content" style="line-height: 1.8; font-size: 1.1em; padding: 20px;" markdown="1">
 
 2. Muthu Krishna Paramahamsar - Srirangam, Trichy
 3. Siddhar Swamigal - Thanjavur
