@@ -74,8 +74,8 @@ img {
 
 .logo-wrapper {
     position: relative;
-    width: 300px;
-    height: 200px; /* Space for arched text and logo */
+    width: 600px;
+    height: 300px; /* Space for arched text and logo */
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -91,7 +91,7 @@ img {
 }
 
 .arched-text-svg text {
-    font-size: 18px;
+    font-size: 36px;
     font-weight: 600;
     fill: var(--primary-color);
     font-family: 'Segoe UI', sans-serif;
@@ -135,6 +135,28 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
+}
+
+.lang-toggle {
+    margin-left: 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+}
+
+.lang-toggle a {
+    margin: 0 0.25rem;
+    color: white;
+    opacity: 0.7;
+}
+
+.lang-toggle a.active {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.lang-toggle a:hover {
+    opacity: 1;
 }
 
 .hero-image-container {
@@ -271,12 +293,12 @@ a {
     }
 
     .logo-wrapper {
-        width: 250px;
+        width: 350px;
         height: 180px;
     }
 
     .arched-text-svg text {
-        font-size: 14px;
+        font-size: 30px;
     }
 
     .center-guru-logo {

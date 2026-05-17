@@ -20,4 +20,9 @@ title: Photo Galleries
     <span class="gallery-title">Community Yoga Day</span>
     <span class="gallery-desc">Click here to view photos from our recent community gathering.</span>
   </a>
+
+  <a href="{{ '/gallery-yogacamp.html' | relative_url }}" class="photo-gallery-link">
+    <span class="gallery-title">Yoga Camp</span>
+    <span class="gallery-desc">Click here to view photos and the write-up for the new Yoga Camp.</span>
+  </a>
 </div>
