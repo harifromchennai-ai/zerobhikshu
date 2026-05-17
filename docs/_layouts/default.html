@@ -15,8 +15,8 @@
             
             <div class="header-center">
                 <div class="logo-wrapper">
-                    <svg viewBox="0 0 800 400" class="arched-text-svg">
-                        <path id="curve" d="M 50 360 A 350 350 0 0 1 750 360" fill="transparent" />
+                    <svg viewBox="0 0 800 450" class="arched-text-svg">
+                        <path id="curve" d="M 50 420 A 350 350 0 0 1 750 420" fill="transparent" />
                         <text>
                             <textPath href="#curve" startOffset="50%" text-anchor="middle">
                                 Shree Pathanjali Maharishi Yoga Kendhram Trust
@@ -40,7 +40,7 @@
             <a href="{{ '/photos.html' | relative_url }}">Photos</a>
             <a href="{{ '/articles.html' | relative_url }}">Articles</a>
             <span class="lang-toggle">
-                <a href="#" class="active" title="Tamil">TA</a> | <a href="#" title="English">EN</a>
+                <a href="#" class="active" id="lang-ta" title="Tamil">TA</a> | <a href="#" id="lang-en" title="English">EN</a>
             </span>
         </nav>
     </header>
@@ -61,6 +61,37 @@
         <script>
             document.addEventListener("DOMContentLoaded", function() {
                 document.getElementById('visit-count').innerText = "1,432";
+
+                // Language Toggle Logic
+                const path = window.location.pathname;
+                const langTa = document.getElementById('lang-ta');
+                const langEn = document.getElementById('lang-en');
+                
+                const isEnglish = path.includes('/en-');
+                
+                if (isEnglish) {
+                    langEn.classList.add('active');
+                    langTa.classList.remove('active');
+                    langTa.href = path.replace('/en-', '/');
+                    langEn.href = "javascript:void(0)";
+                } else {
+                    langTa.classList.add('active');
+                    langEn.classList.remove('active');
+                    
+                    let enPath = path;
+                    if (path === '/' || path.endsWith('/')) {
+                        enPath = path + 'en-index.html';
+                    } else {
+                        const parts = path.split('/');
+                        const file = parts.pop();
+                        if (file) {
+                            parts.push('en-' + file);
+                            enPath = parts.join('/');
+                        }
+                    }
+                    langEn.href = enPath;
+                    langTa.href = "javascript:void(0)";
+                }
             });
         </script>
     </footer>

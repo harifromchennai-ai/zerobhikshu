@@ -75,7 +75,7 @@ img {
 .logo-wrapper {
     position: relative;
     width: 600px;
-    height: 300px; /* Space for arched text and logo */
+    height: 340px; /* Space for arched text and logo */
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -93,7 +93,7 @@ img {
 .arched-text-svg text {
     font-size: 36px;
     font-weight: 600;
-    fill: var(--primary-color);
+    fill: blue;
     font-family: 'Segoe UI', sans-serif;
     text-transform: uppercase;
 }
