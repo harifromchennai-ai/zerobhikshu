@@ -7,7 +7,7 @@ title: Biography - Page 3
 
 "I expect from you," he said. This is the secret behind Sadguru Zero Bhikshu's holy name.
 
-**Establishment of "Siruvar Ulagam" (Children's World):**
+### Establishment of "Siruvar Ulagam" (Children's World):
 
 Our Sadguru "0" Bhikshu lived his life showing honesty as his main capital. For this, he received the title of "Best Achiever" during his service from the then Chief Minister of Tamil Nadu, Mr. Kamaraj.
 
@@ -21,7 +21,7 @@ Based on the good intention that "the bliss I have attained should spread throug
 
 By imparting these teachings, he trained them in both Yoga and Devotion (Bhakti) paths.
 
-**Sri Pathanjali Maharishi Yoga Kendram:**
+### Sri Pathanjali Maharishi Yoga Kendram:
 
 </div>
 
